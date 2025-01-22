@@ -279,7 +279,7 @@ extraVolumeMounts: []
 
 persistence:
   ## @param persistence.enabled Enable persistence using PVC
-  enabled: false
+  enabled: true
 
   ## @param persistence.existingClaim Name of an existing PVC to use
   existingClaim:
@@ -317,7 +317,7 @@ existingSecretKeyPassword: password
 
 mariadb:
   ## @param mariadb.enabled Whether to use the MariaDB chart
-  enabled: false
+  enabled: true
 
   ## @param mariadb.architecture MariaDB architecture
   architecture: standalone
@@ -343,7 +343,7 @@ mariadb:
 
 externalMariadb:
   ## @param externalMariadb.enabled Whether to use an external MariaDB
-  enabled: false
+  enabled: true
 
   ## @param externalMariadb.host External MariaDB host
   host: mariadb
@@ -370,7 +370,7 @@ externalMariadb:
 
 postgresql:
   ## @param postgresql.enabled Whether to use the PostgreSQL chart
-  enabled: false
+  enabled: true
 
   auth:
     ## @param postgresql.auth.username PostgreSQL user
@@ -396,7 +396,7 @@ postgresql:
 
 externalPostgresql:
   ## @param externalPostgresql.enabled Whether to use an external PostgreSQL
-  enabled: false
+  enabled: true
 
   ## @param externalPostgresql.host External PostgreSQL host
   host: postgresql
